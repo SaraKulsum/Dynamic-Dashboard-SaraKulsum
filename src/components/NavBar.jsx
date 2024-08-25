@@ -86,15 +86,36 @@ const NavBar = () => {
           <button className="m-2" onClick={toggleDrawer(false)}>
             <CloseIcon />
           </button>
-          <form>
-            <div className="border border-[#dcf1fa]   bg-[var(--primary-color)] px-2 rounded-md">
-              <Search color="action" fontSize="small" />
-              <input
-                type="text"
-                className="border-[#dcf1fa] outline-none  bg-[var(--primary-color)] rounded-sm p-1 "
-                placeholder="search anything..."
-              />
-            </div>
+          <form className="searchBar_smScreens">
+        <div className="border border-[#dcf1fa]   bg-[var(--primary-color)] px-2 rounded-md relative">
+          <Search color="action" fontSize="small" />
+          <input
+            type="text"
+            className="border-[#dcf1fa] outline-none  bg-[var(--primary-color)] rounded-sm p-1 "
+            placeholder="search anything..."
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            onFocus={() => setHidden(!hidden)}
+            onBlur={() => setHidden(!hidden)}
+          />
+        </div>
+        <ul
+          className={
+            hidden ? `bg-white fixed w-[220px] p-3 z-20 rounded-md` : `hidden`
+          }
+        >
+          {filteredDropDownListData.map((item, index) => (
+            <li
+              key={index}
+              onMouseDown={() => {
+                setInputValue(item);
+              }}
+              className="w-full px-2 py-1 rounded-md hover:bg-slate-300 hover:cursor-pointer"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
           </form>
         </div>
       </Drawer>
