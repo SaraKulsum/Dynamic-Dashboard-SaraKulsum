@@ -1,0 +1,108 @@
+{
+   
+      "categories": [
+        {
+          "categoryName": "Sales",
+          "widgets": [
+            {
+              "widgetName": "Revenue",
+              "id": 0,
+              "checked" : true,
+
+                "data": [{ "name": "Group A", "value": 400 },
+                { "name": "Group B", "value": 300 },
+                { "name": "Group C", "value": 300 },
+                { "name": "Group D", "value": 200 }]
+              
+            },
+            {
+              "widgetName": "Sales by Region",
+              "id": 1,
+             "checked" : true,
+
+              "data": [{ "name": "Group s", "value": 400 },
+              { "name": "Group a", "value": 300 },
+              { "name": "Group r", "value": 300 },
+              { "name": "Group a", "value": 200 }]
+              
+            }
+          ]
+        },
+        {
+          "categoryName": "Marketing",
+          "widgets": [
+            {
+              "widgetName": "Campaign Performance",
+              "id" : 0,
+              "checked" : true,
+
+              "data": [
+                { "name": "A", "value": 2400},
+                { "name": "B", "value": 1398},
+                { "name": "C", "value": 5800},
+                { "name": "D", "value": 3908},
+                { "name": "E", "value": 4800},
+                { "name": "F", "value": 3800},
+                { "name": "G", "value": 4300}
+              ]
+              
+            },
+            {
+              "widgetName": "Marketing Performance",
+              "id" : 1,
+              "checked" : true,
+
+              "data": [
+                { "name": "A", "value": 5400},
+                { "name": "B", "value": 7398},
+                { "name": "C", "value": 5800},
+                { "name": "D", "value": 2908},
+                { "name": "E", "value": 7800},
+                { "name": "F", "value": 3800},
+                { "name": "G", "value": 2300}
+              ]
+            }
+          ]
+        },
+
+        {
+          "categoryName": "Growth",
+          "widgets": [
+            {
+              "widgetName": "Revenue",
+              "id" : 0,
+              "checked" : true,
+
+              "data" : [
+                { "name": "A", "value": 2400 },
+                { "name": "B", "value": 1398 },
+                { "name": "C", "value": 9800 },
+                { "name": "D", "value": 3908 },
+                { "name": "E", "value": 4800 },
+                { "name": "F", "value": 3800 },
+                { "name": "G", "value": 4300 }
+              ]
+              
+            },
+            {
+              "widgetName": "Gross Profit",
+              "id" : 1,
+              "checked" : true,
+
+              "data": [
+                { "name": "A", "value": 5400},
+                { "name": "B", "value": 7398},
+                { "name": "C", "value": 5800},
+                { "name": "D", "value": 2908},
+                { "name": "E", "value": 7800},
+                { "name": "F", "value": 3800},
+                { "name": "G", "value": 2300}
+              ]
+            }
+          ]
+        }
+
+      ]
+    
+  }
+  

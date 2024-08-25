@@ -1,0 +1,5 @@
+:root{
+    --primary-color: #EEF7FB;
+    background-color: var(--primary-color);
+    text:#34b7d8
+}
